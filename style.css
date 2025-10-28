@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.premier{
+    background-color: black;
+    height: 175px;
+    
+}
+.photo{
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;    
+}
+.rounded-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;   
+}
+.nom{
+    margin-top: -375px;
+    position: relative;
+    display: inline-block;
+    margin-left: 2rem;
+    color: white;
+}
+.info{
+    position: relative;
+    display: inline;
+    text-align: center;
+    float: right;
+    margin-right: -10rem;
+    margin-top: 1rem ;
+}
+.numero{
+    margin-right: 10rem;
+    padding-right: 55px;
+    display: inline-block;
+    color: white;
+   
+}
+
+
+.mail{
+    margin-left: 95px;
+}
+
+.deuxieme{
+    background-color: deepskyblue;
+    height: 175px;
+}
+.corps{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    padding: 40px;
+}
+.gauche{
+    width: 40%;
+}
+.droit{
+    width: 60%;
+   
+
+}
+.langues ul li {
+    margin-left: 155px;
+    
+}
+.la{
+    margin-left: 165px;
+    font-size: 25px;
+}
+
+
+@media (max-width: 600px) {
+    .premier {
+        height: auto;
+        padding: 1rem 0;
+    }
+    .photo {
+        display: block;
+        margin: 0.5rem auto 0 auto;
+        margin-top: 0;
+        text-align: center;
+    }
+    .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .nom {
+        margin-top: 0;
+        position: relative;
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        color: white;
+    }
+    .info {
+        position: relative;
+        display: block;
+        float: none;
+        margin: 0.5rem auto 0 auto;
+        text-align: center;
+        margin-right: 0;
+    }
+    .numero{
+        margin-right: 0;
+        padding-right: 0;
+        display: block;
+        color: white;
+        margin-top: 0.25rem;
+    }
+    .mail{
+        margin-left: 0;
+        display: block;
+        margin-top: 0.25rem;
+        text-align: center;
+    }
+    .deuxieme{
+        height: auto;
+        padding: 1rem 0;
+    }
+    .corps{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .gauche, .droit{
+        width: 100%;
+    }
+    .langues ul li {
+        margin-left: 0;
+        text-align: center;
+    }
+    .la{
+        margin-left: 0;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .premier{ height: 140px; }
+    .rounded-circle{ width: 130px; height: 130px; }
+    .nom{ margin-top: -200px; margin-left: 1rem; }
+    .info{ margin-right: -5rem; margin-top: 0.5rem; float: right; }
+    .numero{ margin-right: 6rem; padding-right: 30px; }
+    .mail{ margin-left: 60px; }
+    .corps{ flex-direction: row; flex-wrap: wrap; height: auto; padding: 30px; }
+    .gauche{ width: 45%; }
+    .droit{ width: 55%; }
+    .langues ul li { margin-left: 100px; }
+    .la{ margin-left: 110px; font-size: 22px; }
+}
+
+@media (min-width: 901px) {
+    .corps{ padding: 40px 80px; }
+    .premier{ height: 175px; }
+    .gauche{ width: 40%; }
+    .droit{ width: 60%; }
+    .rounded-circle{ width: 150px; height: 150px; }
+}
